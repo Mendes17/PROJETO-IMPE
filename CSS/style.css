@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7e2c9;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    color: #462216;
+}
+
+#container {
+    max-width: 1280px;
+}
+
+p,
+a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+#bt-fechar,
+#bt-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 2;
+    width: 75px;
+}
+
+#bt-fechar {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: rgba(247, 226, 201, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #E3883F;
+    background-color: #462216;
+    font-weight: bold;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+nav ul li {
+    margin-top: 48px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+header img {
+    width: 115px;
+}
+
+#foto-imperial {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.artigo1 h1 {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.artigo1 p {
+    margin-top: 16px;
+    color: #462216;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+footer {
+    margin-top: 32px;
+    background-color: #E3883F;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 1.2rem;
+}
+
+@media(min-width: 768px) {
+    
+    #bt-menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+        background-color: rgba(247, 226, 201, 0);
+        position: relative;
+        z-index: 1;
+        display: flex;
+        gap: 16px;
+    }
+
+    nav ul a:hover {
+        background-color: #fff;
+        color: #462216;
+        border: 1px solid #462216;
+    }
+}
